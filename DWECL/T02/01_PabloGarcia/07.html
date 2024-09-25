@@ -4,17 +4,23 @@
     <script>
     let num1;
     num1 = parseFloat(prompt ("Introduce un número: "));
-    
-    let multiplicador = 1;
-   for(let i = 1 ; i <= num1; i++){
-       var factorial = num1 *= i;
-   }
+
+
     // function factorialize(num1) {
     // return num1;
     //   }
-    
+
+        //Empieza a multiplicar el num introducido -1 
+        //
+    for(i = num1 -1; i < num1 && i > 0; i--){
+      num1 = num1 * i;
+    }
+    factorial = num1;
+
+
+
     </script>
-    
+
 </head>
 <body>
     <body onload="javascript:alert(factorial);"></body>
